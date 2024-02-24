@@ -30,4 +30,4 @@ To run the RDP Manager with WOL, follow these steps:
 
 1. Clone this repository:
   ```bash
-  $ git clone https://github.com/your-username/rdp-manager-wol
+  $ git clone https://github.com/iandresrdrg/RDW_WOL
