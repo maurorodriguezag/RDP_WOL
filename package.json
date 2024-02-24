@@ -1,0 +1,26 @@
+{
+  "name": "rdwol-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "build-mac": "electron-packager ./ RDPWol --icon=icon.icns --overwrite --ignore=RDP"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "electron-context-menu": "^3.6.1",
+    "electron-store": "^8.1.0",
+    "sweetalert2": "^11.10.5",
+    "wake_on_lan": "^1.0.0"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear conexión</title>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .h-100vh {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="h-100vh">
+      <div class="p-3 mb-2 bg-light h-100">
+        <div class="container-fluid py-2">
+          <h1 class="display-5 fw-bold">Crear conexión</h1>
+          <div id="form_create_connection" class="row g-3">
+            <div class="col-lg-6">
+              <label for="name" class="form-label">Nombre de la conexión</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="col-sm-6">
+                <label for="ip" class="form-label">IP</label>
+                <select
+                    class="form-control form-select"
+                    name="ip"
+                    id="ip"
+                >
+                    <option selected hidden>Seleccione una IP</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+              <label for="port" class="form-label">Puerto</label>
+              <input
+                type="number"
+                class="form-control"
+                id="port"
+                name="port"
+                value="3389"
+                required
+              />
+            </div>
+            <div class="col-sm-12">
+                <label for="mac" class="form-label">MAC</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mac"
+                  name="mac"
+                  disabled
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="resolution">Resolución pantalla</label>
+                <select class="form-select" id="resolution">
+                  <option value="/f" selected>Pantalla completa</option>
+                  <option value="/size:2560x1440">2560x1440</option>
+                  <option value="/size:1920x1080">1920x1080</option>
+                  <option value="/size:1280x1024">1280x1024</option>
+                  <option value="/size:1024x768">1024x768</option>
+                  <option value="/size:800x600">800x600</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="user" class="form-label">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="user"
+                  name="user"
+                  required
+                />
+              </div>
+              <div class="col-lg-6">
+                <label for="password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+            
+            <div class="col-12">
+                <hr>
+              <button type="button" class="btn btn-success" onclick="edit_connection()">
+                Editar conexión
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
